@@ -3,6 +3,7 @@ from datetime import date
 import pandas as pd
 import requests
 import streamlit as st
+from pypdf.errors import PdfReadError
 
 from invoice_utils import extract_invoice_details, extract_text
 
@@ -54,7 +55,7 @@ with tab_process:
         elif uploaded_file is not None:
             try:
                 document_text = extract_text(uploaded_file)
-            except (UnicodeDecodeError, ValueError) as error:
+            except (UnicodeDecodeError, PdfReadError, ValueError) as error:
                 st.error(f"Could not read this document: {error}")
                 document_text = ""
         else:
