@@ -81,9 +81,20 @@ control and could add usage-based costs.
 
 ### Demo
 
-Add a short screen recording or screenshots here after you have run the app.
-This repository does not claim a public hosted demo; InvoiceMate is intended
-to be run locally for privacy.
+InvoiceMate is intended to run locally for privacy; there is no hosted demo.
+These screenshots show a sample receipt workflow in the running app:
+
+#### Paste or upload a receipt
+
+![InvoiceMate receipt input screen](screenshots/invoicemate-upload.png)
+
+#### Review the AI-extracted details
+
+![InvoiceMate extracted expense details for review](screenshots/invoicemate-extracted-details.png)
+
+#### Check the expense dashboard and export
+
+![InvoiceMate expense dashboard](screenshots/invoicemate-expense-dashboard.png)
 
 ### First user feedback
 
